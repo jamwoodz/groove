@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Groove Trails Oklevélgeneráló</title>
+        <link rel="stylesheet" href="./certificateGen.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+        <script src="imageHandler.js"></script>
+        <script src="certificateGen.js"></script>
+    </head>   
+
+    <body onload="initCanvas()">        
+        <button onclick="generatePdf()" id="pdfButton">PDF letöltése</button>   
+        <div onClick="downloadAsImage()"><a  id="downloadLnk" download="YourFileName.jpg">Download as image</a></div>
+
+        <a id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download to myImage.jpg</a>
+
+        
+        <canvas id="certificateCanvas"></canvas>
+        <span id="assets"  style="display: none">
+            <img src="./img/Groove logo L.svg" id="logo"/>
+            <img src="./img/Helka.svg" />
+            <img src="./img/Utvonal.svg" />
+            <img src="./img/Gratulalunk.svg" />
+            <img src="./img/MAX Adat panel.svg" />
+            <img src="./img/A4_Default/A4_alap_kep.png" id="canvasBackground"/>            
+        </span>
+    
+    </body>
+
+</html>

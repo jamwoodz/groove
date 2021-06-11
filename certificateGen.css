@@ -1,0 +1,23 @@
+body{
+    background-color: white;    
+    padding:0.5cm;    
+    display: block;
+}
+
+#assets{
+    visibility: hidden;
+}
+
+#certificateCanvas{    
+    border:1px black solid;
+    filter: drop-shadow(5px 5px 2px darkgrey);        
+    display: block;
+}
+
+#certificateCanvas::after{
+    padding-bottom: 1cm;
+}
+
+#pdfButton{
+    margin-bottom: 0.5cm;
+}
